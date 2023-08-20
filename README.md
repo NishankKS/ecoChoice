@@ -101,7 +101,18 @@ Run the app:
 streamlit run recommender.py
 ```
 
+to start the database:(locally)
+```
+sudo service mongod start 
+```
+to run the server fastapi:
+```
+uvicorn backend:app --reload --port=8080
+```
 
+note : The backend is hosted on render and database on mongodb, we couldn't fit all the data we have on the free services hence the actual model was built locally with all the data but the for the hosted backend we built seperate backend (similar to the current one but a little change in connection strings and database names)
+link to the hosted backend repo [this](https://github.com/randomdheeraj/for_hosting) and the hosted link is [this](https://flipkart-grid-kw57.onrender.com/) with same end points and header requirements as above. <br>
+P.s: we made seperate github account for this because all our free resources exhaused.
 
 
 
