@@ -25,7 +25,7 @@ from sklearn.decomposition import TruncatedSVD
 
 
 def train(x):
-    data=pd.read_csv("data/final_merged.csv")
+    data=pd.read_csv("flipkart_grid/data_and_clean/final_merged.csv")
     data.drop(['time'], axis=1,inplace=True)
     data.columns=['productId','userId','Rating']
     no_of_rated_products_per_user = data.groupby(by='userId')['Rating'].count().sort_values(ascending=False)
