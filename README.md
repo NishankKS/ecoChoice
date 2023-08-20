@@ -85,6 +85,7 @@ Collaborative Filtering Refinements: Refining collaborative filtering models by 
 Customization Interfaces: Developing user-friendly interfaces that allow users to fine-tune their preferences and refine their personalized recommendations manually.
 
 Multi-Domain Recommendations:  Applying the personalized ranking system to new domains and industries, leveraging its capabilities for diverse sectors.
+
 Steps to run this project:  
 STEP 1: Clone the GitHub repository.  
 STEP 2: Move to folder streamlit_front_end.  
